@@ -1,0 +1,20 @@
+body{
+    background-color: #1c1d26;
+}
+canvas {
+    width: 70%;
+    height: 55rem;
+    border: #e44c65 solid;
+}
+.derecha{
+    float: right;
+    
+}
+.derecha p{
+    text-align: center;
+    font-family: Arial;
+    font-size: 40px;
+    color: white;
+    padding-right: 20rem;
+
+}
