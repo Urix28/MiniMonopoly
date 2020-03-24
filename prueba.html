@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+</HEAD>
+ 
+<BODY>
+    <script>
+        var face0=new Image()
+        face0.src="img/1.png"
+        var face1=new Image()
+        face1.src="img/2.png"
+        var face2=new Image()
+        face2.src="img/3.png"
+        var face3=new Image()
+        face3.src="img/4.png"
+        var face4=new Image()
+        face4.src="img/5.png"
+        var face5=new Image()
+        face5.src="img/6.png"
+    </script>
+ 
+ 
+    <img src="" name="mydice">
+ 
+    <form>
+    <input type="button" value="Lanza dado" onClick="lanzar()">
+    </form>
+ 
+    <script>
+    function lanzar()
+    {
+        var randomdice=Math.round(Math.random()*5);
+        document.images["mydice"].src=eval("face"+randomdice+".src");
+    }
+    </script>
+ 
+</BODY>
+</HTML>
