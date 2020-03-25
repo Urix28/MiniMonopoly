@@ -8,9 +8,41 @@ body{
     height: 55rem;
     border: #e44c65 solid;
 }
+#dado{
+    position: absolute;
+    right: 10%;
+    bottom: 60%;
+}
+#btn{
+    width: 10rem;
+	height: 2rem;
+    background-size: 100%;
+	background-color: #e44c65;
+    font-size: 20px;
+	color: white;
+	font-family: Arial;
+    position: absolute;
+    right: 10%;
+    bottom: 50%;
+	border-style: none;
+	box-shadow: 0px 0px 8px black;
+	text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+}
+
+#btn:hover{
+    box-shadow: 0px 0px 8px white;
+}
 .derecha{
     float: right;
     
+}
+#Pika{
+    top: 0%;
+    position: absolute;
+    margin-top: 0px;
+    left: 20rem;
 }
 #juanito p{
     padding-left: 1rem;
@@ -19,8 +51,8 @@ body{
     font-size: 40px;
 }
 #tablero{
-    padding-left: 20%;
-    top: 40%;
+    padding-left: 2%;
+    top: 45%;
     
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,10 +63,12 @@ body{
 
 
 .derecha p{
+    position: absolute;
     text-align: center;
     font-family: Arial;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
-    padding-right: 20rem;
+    top: 0%;
+    right: 10%;
 
 }
