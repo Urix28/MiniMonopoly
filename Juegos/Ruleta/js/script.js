@@ -11,7 +11,12 @@ function girar(){
         calcular(rand);
     }  
     else {
-    	alert("no te queda suficiente dinero");
+        alert("no te queda suficiente dinero has perdido");
+        setTimeout(() => {
+            window.location.replace("../../index.html");
+            
+            
+        }, 100);
     }
 }
 function sumarPuntos(p){
@@ -32,11 +37,20 @@ function calcular(rand){
     	    break;
     	case valor > 45 && valor <= 90:
     	    alert("¡Has ganado!Wuuuu :D");
-    	    sumarPuntos(10);
+    	    setTimeout(() => {
+                window.location.replace("../../index.html");
+                
+                
+            }, 100);
     	    break;
         case valor > 90 && valor <= 135:
             alert("¡Has perdido!Buuuu D:");
-            sumarPuntos(-10);
+            setTimeout(() => {
+                window.location.replace("../../index.html");
+                
+                
+            }, 100);
+
             break; 
         case valor > 135 && valor <= 180:
             alert("No has ganado ni sumado, mas suerte");

@@ -288,8 +288,19 @@
                 ctx.font = "bold 50px Courier";
                 if (errores < 5){
                     ctx.fillText("Muy bien, la palabra es: ", 110, 280);
+                    setTimeout(() => {
+                        window.location.replace("../../index.html");
+                        
+                        
+                    }, 100);
                 } else {
                     ctx.fillText("Lo sentimos, la palabra era: ", 110, 280);
+                    alert("Has perdido");
+                    setTimeout(() => {
+                        window.location.replace("../../index.html");
+                        
+                        
+                    }, 100);
                 }
                 
                 ctx.font = "bold 80px Courier";

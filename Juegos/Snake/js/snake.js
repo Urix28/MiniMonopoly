@@ -1,7 +1,7 @@
 
 var velocidad = 90;
 var tamano = 20;
-
+var puntos=0;
 class objeto {
 	constructor(){
 		this.tamano = tamano;
@@ -116,7 +116,23 @@ function control(event){
 	}
 }
 
+function Ganar(Puntazos){
+	setTimeout(() => {
+		if(Puntazos === 1){
+			alert("Has ganado");
+			setTimeout(() => {
+                window.location.replace("../../index.html");
+                
+                
+            }, 100);
+	
+		}
+	}, 100);
+	
+}
+
 function findeJuego(){
+	puntos = 0;
 	xdir = 0;
 	ydir = 0;
 	ejex = true;
@@ -124,6 +140,11 @@ function findeJuego(){
 	cabeza = new Cola(40,40);
 	comida = new Comida();
 	alert("Perdiste UnU "  );
+	setTimeout(() => {
+		window.location.replace("../../index.html");
+		
+		
+	}, 100);
 }
 function choquepared(){
 	//console.log("X: "+cabeza.x)
@@ -159,7 +180,7 @@ function dibujar(){
 	comida.dibujar(ctx);
 }
 function main(){
-	var puntos=0;
+	
 	choquecuerpo();
 	choquepared();
 	dibujar();
@@ -170,7 +191,9 @@ function main(){
 		comida.colocar();
 		cabeza.meter();
 		puntos ++;
+		Ganar(puntos);
 		console.log(puntos);
+		
 	}
 }
 setInterval("main()", velocidad);
