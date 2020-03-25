@@ -44,6 +44,10 @@ class Cola extends objeto {
 		} else {
 			this.siguiente.meter();
 		}
+		if(puntos>130){
+		ganar();
+	}
+
 	}
 	verSiguiente(){
 		return this.siguiente;
@@ -139,6 +143,7 @@ function findeJuego(){
 	ejey = true;
 	cabeza = new Cola(40,40);
 	comida = new Comida();
+	puntos=0;
 	alert("Perdiste UnU "  );
 	setTimeout(() => {
 		window.location.replace("../../index.html");
@@ -146,14 +151,22 @@ function findeJuego(){
 		
 	}, 100);
 }
+function ganar(){
+	
+	alert("ganaste OwO");
+
+	window.location="index.html";
+}
+
+
+
 function choquepared(){
-	//console.log("X: "+cabeza.x)
-	//console.log("Y: "+cabeza.y)
-	if(cabeza.x < 0 || cabeza.x > 780 || cabeza.y < 0 || cabeza.y > 500){
+	if(cabeza.x < 0 || cabeza.x > 590 || cabeza.y < 0 || cabeza.y > 590){
 		findeJuego();
 	}
 }
 function choquecuerpo(){
+
 	var temp = null;
 	try{
 		temp = cabeza.verSiguiente().verSiguiente();
@@ -166,7 +179,6 @@ function choquecuerpo(){
 			findeJuego();
 		} else {
 			temp = temp.verSiguiente();
-			
 		}
 	}
 }
@@ -180,21 +192,29 @@ function dibujar(){
 	comida.dibujar(ctx);
 }
 function main(){
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 754e3b3f33f70813f771de6b7e410228fe701830
 	choquecuerpo();
 	choquepared();
 	dibujar();
 	movimiento();
-	
 	if(cabeza.choque(comida)){
 		
 		comida.colocar();
 		cabeza.meter();
+<<<<<<< HEAD
 		puntos ++;
 		Ganar(puntos);
+=======
+		puntos+=10;
+>>>>>>> 754e3b3f33f70813f771de6b7e410228fe701830
 		console.log(puntos);
 		
 	}
+	
 }
 setInterval("main()", velocidad);
 
