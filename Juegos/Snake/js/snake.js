@@ -192,11 +192,7 @@ function dibujar(){
 	comida.dibujar(ctx);
 }
 function main(){
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> 754e3b3f33f70813f771de6b7e410228fe701830
 	choquecuerpo();
 	choquepared();
 	dibujar();
@@ -205,12 +201,12 @@ function main(){
 		
 		comida.colocar();
 		cabeza.meter();
-<<<<<<< HEAD
+
 		puntos ++;
 		Ganar(puntos);
-=======
+
 		puntos+=10;
->>>>>>> 754e3b3f33f70813f771de6b7e410228fe701830
+
 		console.log(puntos);
 		
 	}
