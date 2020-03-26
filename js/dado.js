@@ -153,7 +153,7 @@
             }
             if (NumeroRandom === 3) {
                 console.log("Hola 4")
-                Abrir("ruleta");
+                Abrir("Ruleta");
             }
             if (NumeroRandom === 4) {
                 console.log("Hola 5")
