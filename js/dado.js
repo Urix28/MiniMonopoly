@@ -27,8 +27,8 @@
 //    }
 */
 
-    const JugaUno = "Jugador 1";
-    const JugaDos = "Jugador 2";
+    const JugaUno = "Turno del Jugador 1";
+    const JugaDos = "Turno del Jugador 2";
     var Turnos = 0;
     const TurnosUI = document.getElementById("Turnos");
     let arrayTurnos = [];
