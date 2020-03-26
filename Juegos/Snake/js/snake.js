@@ -122,7 +122,7 @@ function control(event){
 
 function Ganar(Puntazos){
 	setTimeout(() => {
-		if(Puntazos === 1){
+		if(Puntazos === 5){
 			alert("Has ganado");
 			setTimeout(() => {
                 window.location.replace("../../index.html");
