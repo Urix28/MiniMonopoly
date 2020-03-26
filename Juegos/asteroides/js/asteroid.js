@@ -635,7 +635,7 @@ function checkShipAsteroidCollisions(){
 	setTimeout(() => {
 		Gano = 1;
 		
-	}, 8000);
+	}, 30000);
 	if(Gano === 1){
 		alert("Has ganado");
 		setTimeout(() => {
